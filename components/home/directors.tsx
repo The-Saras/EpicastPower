@@ -1,22 +1,17 @@
 const directors = [
   {
-    name: 'Robert Hensley',
-    role: 'Chief Executive Officer',
-    image: '/images/director-1.png',
-    bio: 'Three decades of leadership in precision manufacturing and global operations.',
+    name: 'Mr.Atul P. Bedarkar',
+    role: 'Director',
+    image: '/directors/dir1.webp',
+    bio: "Over 30 years of experience in power and electrical infrastructure.Expertise in manufacturing and power distribution equipment.Leads Epicast with a focus on quality, engineering, and innovation."
   },
   {
-    name: 'Amara Okafor',
+    name: 'Prathamesh Bedarkar',
     role: 'Chief Operations Officer',
-    image: '/images/director-2.png',
-    bio: 'Drives operational excellence and lean production across all facilities.',
+    image: '/directors/dir2.webp',
+    bio: "Second-generation entrepreneur with an MBA and technical understanding.Drives growth, innovation, R&D, and operational excellence.Focused on building future-ready power solutions and expanding Epicast's reach.",
   },
-  {
-    name: 'Daniel Crüg',
-    role: 'Director of Engineering',
-    image: '/images/director-3.png',
-    bio: 'Leads R&D and advanced engineering for custom manufacturing solutions.',
-  },
+
 ]
 
 export function Directors() {
@@ -31,20 +26,20 @@ export function Directors() {
         </h2>
       </div>
 
-      <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
         {directors.map((d) => (
           <div
             key={d.name}
-            className="group overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-shadow hover:shadow-md"
+            className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-shadow hover:shadow-md sm:flex-row"
           >
-            <div className="overflow-hidden">
+            <div className="overflow-hidden sm:w-[40%] shrink-0">
               <img
                 src={d.image}
                 alt={`Portrait of ${d.name}`}
-                className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                className="aspect-[3/4] w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
             </div>
-            <div className="p-6">
+            <div className="flex flex-col justify-center p-6 sm:w-[60%]">
               <h3 className="font-heading text-lg font-bold text-foreground">
                 {d.name}
               </h3>
