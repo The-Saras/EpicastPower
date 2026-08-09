@@ -4,22 +4,22 @@ const features = [
   {
     icon: ShieldCheck,
     title: 'Quality Assurance',
-    text: 'Every component passes rigorous multi-stage inspection backed by ISO 9001 certification.',
+    text: 'Every product undergoes stringent quality checks and testing in compliance with applicable IS and IEC standards.',
   },
   {
     icon: Cog,
     title: 'Advanced Manufacturing',
-    text: 'State-of-the-art 5-axis CNC machining and automated production lines.',
+    text: 'Modern production, assembly, and in-house testing infrastructure ensure consistent quality and dependable performance.',
   },
   {
     icon: Truck,
     title: 'Timely Delivery',
-    text: 'Reliable lead times and global logistics keep your operations on schedule.',
+    text: 'Our focus on quality, precision, and timely delivery ensures dependable solutions for demanding power applications.',
   },
   {
     icon: HeartHandshake,
     title: 'Customer Satisfaction',
-    text: 'Dedicated engineering support and long-term partnerships you can rely on.',
+    text: 'Customized solutions, technical support, and responsive after-sales service help us build lasting customer relationships.',
   },
 ]
 
@@ -32,7 +32,7 @@ export function WhyChooseUs() {
             Why Choose Us
           </span>
           <h2 className="mt-3 font-heading text-3xl font-bold tracking-tight text-foreground text-balance sm:text-4xl">
-            Built on standards the industry trusts.
+            Built on engineering, quality, and reliability.
           </h2>
         </div>
 
