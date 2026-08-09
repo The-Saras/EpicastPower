@@ -17,19 +17,18 @@ export function Hero() {
       <div className="mx-auto flex min-h-[80vh] max-w-7xl flex-col justify-center px-4 py-24 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
           <span className="inline-flex items-center rounded-full border border-primary-foreground/25 bg-primary-foreground/10 px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary-foreground">
-            Precision Manufacturing Since 1986
+            Precision Manufacturing Since 2004
           </span>
           <h1 className="mt-6 font-heading text-4xl font-bold leading-tight tracking-tight text-primary-foreground text-balance sm:text-5xl lg:text-6xl">
-            Engineering the components that move industry forward.
+            1 Decades of manufacturing excellence in power solutions
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-primary-foreground/80 text-pretty">
-            Forgeline Industries designs and manufactures precision parts, metal
-            fabrication, and custom solutions for the world&apos;s most demanding
-            sectors.
+            Epicast Power Equipment designs and manufactures reliable power equipment and customized electrical solutions for power transmission, distribution, utilities, industries, and infrastructure projects.
+
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Button
-              asChild
+
               size="lg"
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
             >
@@ -39,7 +38,7 @@ export function Hero() {
               </Link>
             </Button>
             <Button
-              asChild
+
               size="lg"
               variant="outline"
               className="border-primary-foreground/40 bg-transparent text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"

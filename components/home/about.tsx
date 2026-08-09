@@ -1,7 +1,7 @@
 const stats = [
-  { value: '38+', label: 'Years of Experience' },
-  { value: '99.8%', label: 'Product Quality Rate' },
-  { value: '50K+', label: 'Units / Month Capacity' },
+  { value: '20+', label: 'Years of Experience' },
+  { value: '33 kV', label: 'Product Range' },
+  { value: '100%', label: 'Quality-Focused Manufacturing' },
 ]
 
 export function About() {
@@ -18,17 +18,14 @@ export function About() {
 
         <div>
           <span className="text-sm font-semibold uppercase tracking-wider text-primary">
-            About Forgeline
+            About
           </span>
           <h2 className="mt-3 font-heading text-3xl font-bold tracking-tight text-foreground text-balance sm:text-4xl">
-            A trusted manufacturing partner built on precision and reliability.
+            1 Decades of manufacturing excellence in power solutions
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-muted-foreground text-pretty">
-            For nearly four decades, Forgeline has partnered with global
-            enterprises to deliver components that meet the highest standards of
-            quality and performance. Our integrated facilities, certified
-            processes, and engineering expertise allow us to scale from prototype
-            to mass production without compromise.
+            For over two decades, Epicast Power Equipment has been delivering reliable and high-performance power equipment to utilities, EPC contractors, industries, and infrastructure developers. Our modern manufacturing and testing infrastructure, combined with stringent quality processes and engineering expertise, enables us to consistently deliver products that meet the demanding requirements of power transmission and distribution applications.
+
           </p>
 
           <div className="mt-10 grid grid-cols-3 gap-4">

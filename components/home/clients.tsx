@@ -2,13 +2,36 @@
 
 export function Clients() {
   const clients = [
-    { id: 1, name: 'TechCore Industries', initials: 'TC' },
-    { id: 2, name: 'Global Manufacturing Co', initials: 'GM' },
-    { id: 3, name: 'Precision Solutions Ltd', initials: 'PS' },
-    { id: 4, name: 'Advanced Dynamics', initials: 'AD' },
-    { id: 5, name: 'Industrial Partners Group', initials: 'IP' },
-    { id: 6, name: 'NextGen Engineering', initials: 'NG' },
-    { id: 6, name: 'Bharat Heavy Electronic Limited', initials: 'BHEL' },
+    {
+      id: 1,
+      name: 'CG Power',
+      logo: '/clients-logo/CG.png',
+    },
+    {
+      id: 2,
+      name: 'Lucy Electric',
+      logo: '/clients-logo/LucyElectric_logo_cmyk_no-background-square-proportion-1 (1).png',
+    },
+    {
+      id: 3,
+      name: 'MSEDCL',
+      logo: '/clients-logo/MSEDCLlogo.png',
+    },
+    {
+      id: 4,
+      name: 'BHEL',
+      logo: '/clients-logo/images.webp',
+    },
+    {
+      id: 5,
+      name: 'Jyoti Ltd',
+      logo: '/clients-logo/jyoti-300x300.png',
+    },
+    {
+      id: 6,
+      name: 'ABB Group',
+      logo: '/clients-logo/kisspng-abb-group-automation-industry-company-product-5acae76aa1f3f3.4118179915232469546634-removebg-preview.png',
+    },
   ]
 
   return (
@@ -19,7 +42,7 @@ export function Clients() {
             Trusted by Leading Companies
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            We partner with industry leaders across manufacturing, aerospace, automotive, and technology sectors.
+            We partner with industry leaders across manufacturing, power, electrical, and automation sectors.
           </p>
         </div>
 
@@ -27,13 +50,13 @@ export function Clients() {
           {clients.map((client) => (
             <div
               key={client.id}
-              className="flex items-center justify-center rounded-lg border border-border bg-card p-8 transition-all hover:shadow-md"
+              className="group flex h-32 items-center justify-center rounded-lg border border-border bg-card p-6 transition-all hover:border-primary/30 hover:shadow-md"
             >
-              <div className="flex h-16 w-16 items-center justify-center rounded-lg bg-gradient-to-br from-primary/10 to-primary/5">
-                <span className="text-sm font-bold text-primary">
-                  {client.initials}
-                </span>
-              </div>
+              <img
+                src={client.logo}
+                alt={`${client.name} logo`}
+                className="max-h-16 max-w-full object-contain filter grayscale opacity-70 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300 dark:brightness-150"
+              />
             </div>
           ))}
         </div>
