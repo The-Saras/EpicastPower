@@ -3,7 +3,7 @@ import { SiteFooter } from '@/components/site-footer'
 import { Hero } from '@/components/home/hero'
 import { Clients } from '@/components/home/clients'
 import { About } from '@/components/home/about'
-import { History } from '@/components/home/history'
+import { VisionMission } from '@/components/home/history'
 import { Directors } from '@/components/home/directors'
 import { WhyChooseUs } from '@/components/home/why-choose-us'
 
@@ -15,7 +15,7 @@ export default function HomePage() {
         <Hero />
         <Clients />
         <About />
-        <History />
+        <VisionMission />
         <Directors />
         <WhyChooseUs />
       </main>

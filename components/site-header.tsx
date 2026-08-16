@@ -55,7 +55,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="hidden md:block">
-          <Button asChild>
+          <Button >
             <Link href="/contact">Request a Quote</Link>
           </Button>
         </div>
@@ -83,7 +83,7 @@ export function SiteHeader() {
                 {link.label}
               </Link>
             ))}
-            <Button asChild className="mt-2">
+            <Button className="mt-2">
               <Link href="/contact" onClick={() => setOpen(false)}>
                 Request a Quote
               </Link>

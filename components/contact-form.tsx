@@ -15,7 +15,7 @@ export function ContactForm() {
   if (submitted) {
     return (
       <div className="flex flex-col items-center justify-center rounded-2xl border border-border bg-card p-10 text-center shadow-sm">
-        <span className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 text-primary">
+        <span className="flex h-14 w-14 items-center justify-center rounded-full bg-brand-red/10 text-brand-red">
           <CheckCircle2 className="h-7 w-7" />
         </span>
         <h3 className="mt-5 font-heading text-xl font-bold text-foreground">
@@ -54,7 +54,7 @@ export function ContactForm() {
             name="name"
             type="text"
             required
-            placeholder="John Smith"
+            placeholder="Your Name"
             className={fieldClass}
           />
         </div>
@@ -67,7 +67,7 @@ export function ContactForm() {
             name="email"
             type="email"
             required
-            placeholder="john@company.com"
+            placeholder="email"
             className={fieldClass}
           />
         </div>
@@ -81,7 +81,7 @@ export function ContactForm() {
           id="phone"
           name="phone"
           type="tel"
-          placeholder="+1 (313) 555-0142"
+          placeholder="Phone number"
           className={fieldClass}
         />
       </div>
@@ -95,7 +95,7 @@ export function ContactForm() {
           name="message"
           required
           rows={5}
-          placeholder="Tell us about your project requirements..."
+          placeholder="Your Requirements"
           className={`${fieldClass} resize-none`}
         />
       </div>

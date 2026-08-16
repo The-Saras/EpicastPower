@@ -50,12 +50,12 @@ export function Clients() {
           {clients.map((client) => (
             <div
               key={client.id}
-              className="group flex h-32 items-center justify-center rounded-lg border border-border bg-card p-6 transition-all hover:border-primary/30 hover:shadow-md"
+              className="flex h-32 items-center justify-center rounded-lg border border-border bg-card p-6"
             >
               <img
                 src={client.logo}
                 alt={`${client.name} logo`}
-                className="max-h-16 max-w-full object-contain filter grayscale opacity-70 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300 dark:brightness-150"
+                className="max-h-16 max-w-full object-contain dark:brightness-150"
               />
             </div>
           ))}
@@ -64,7 +64,7 @@ export function Clients() {
         <div className="mt-16 grid grid-cols-1 gap-8 border-t border-border pt-12 md:grid-cols-3">
           <div className="text-center">
             <div className="text-3xl font-bold text-primary">500+</div>
-            <p className="mt-2 text-muted-foreground">Active Clients Worldwide</p>
+            <p className="mt-2 text-muted-foreground">Active Clients Across India</p>
           </div>
           <div className="text-center">
             <div className="text-3xl font-bold text-primary">25+</div>

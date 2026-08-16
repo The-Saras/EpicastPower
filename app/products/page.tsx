@@ -1,14 +1,12 @@
-import Link from 'next/link'
 import type { Metadata } from 'next'
-import { ArrowRight } from 'lucide-react'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
-import { categories } from '@/lib/products'
+import { ProductsClient } from '@/components/products-client'
 
 export const metadata: Metadata = {
-  title: 'Products — Forgeline Industries',
+  title: 'Products — Epicast Power Equipment',
   description:
-    'Explore our range of industrial components, precision parts, metal fabrication, machinery components, and custom manufacturing solutions.',
+    'Explore our range of high-quality power distribution equipment, transmission hardware, and custom electrical solutions.',
 }
 
 export default function ProductsPage() {
@@ -32,39 +30,10 @@ export default function ProductsPage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {categories.map((c) => (
-              <Link
-                key={c.slug}
-                href={`/products/${c.slug}`}
-                className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-shadow hover:shadow-md"
-              >
-                <div className="overflow-hidden">
-                  <img
-                    src={c.image || '/placeholder.svg'}
-                    alt={c.name}
-                    className="aspect-[16/10] w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                </div>
-                <div className="flex flex-1 flex-col p-6">
-                  <h2 className="font-heading text-xl font-bold text-foreground">
-                    {c.name}
-                  </h2>
-                  <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
-                    {c.shortDescription}
-                  </p>
-                  <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
-                    View Category
-                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
+        <ProductsClient />
       </main>
       <SiteFooter />
     </>
   )
 }
+
