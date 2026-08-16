@@ -15,9 +15,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Forgeline Industries — Precision Manufacturing Solutions',
+  title: 'Epicast Power Equipment — Precision Power Solutions',
   description:
-    'Forgeline Industries delivers precision-engineered industrial components, metal fabrication, and custom manufacturing for global enterprises.',
+    'Epicast Power Equipment designs and manufactures reliable power transmission and distribution equipment for utilities, industries, and infrastructure.',
   generator: 'v0.app',
 }
 

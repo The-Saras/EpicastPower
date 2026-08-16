@@ -18,7 +18,7 @@ export function Directors() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
       <div className="max-w-2xl">
-        <span className="text-sm font-semibold uppercase tracking-wider text-primary">
+        <span className="text-sm font-semibold uppercase tracking-wider text-brand-red">
           Leadership
         </span>
         <h2 className="mt-3 font-heading text-3xl font-bold tracking-tight text-foreground text-balance sm:text-4xl">
@@ -43,7 +43,7 @@ export function Directors() {
               <h3 className="font-heading text-lg font-bold text-foreground">
                 {d.name}
               </h3>
-              <p className="text-sm font-medium text-primary">{d.role}</p>
+              <p className="text-sm font-medium text-brand-red">{d.role}</p>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 {d.bio}
               </p>

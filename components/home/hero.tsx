@@ -20,7 +20,7 @@ export function Hero() {
             Precision Manufacturing Since 2004
           </span>
           <h1 className="mt-6 font-heading text-4xl font-bold leading-tight tracking-tight text-primary-foreground text-balance sm:text-5xl lg:text-6xl">
-            1 Decades of manufacturing excellence in power solutions
+            Decades of manufacturing excellence in power solutions
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-primary-foreground/80 text-pretty">
             Epicast Power Equipment designs and manufactures reliable power equipment and customized electrical solutions for power transmission, distribution, utilities, industries, and infrastructure projects.

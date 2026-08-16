@@ -1,6 +1,6 @@
 const stats = [
   { value: '20+', label: 'Years of Experience' },
-  { value: '33 kV', label: 'Product Range' },
+  { value: 'Up to 33 kV', label: 'Product Range' },
   { value: '100%', label: 'Quality-Focused Manufacturing' },
 ]
 
@@ -17,14 +17,14 @@ export function About() {
         </div>
 
         <div>
-          <span className="text-sm font-semibold uppercase tracking-wider text-primary">
+          <span className="text-sm font-semibold uppercase tracking-wider text-brand-red">
             About
           </span>
           <h2 className="mt-3 font-heading text-3xl font-bold tracking-tight text-foreground text-balance sm:text-4xl">
-            1 Decades of manufacturing excellence in power solutions
+            Powering Reliable Electrical Infrastructure
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-muted-foreground text-pretty">
-            For over two decades, Epicast Power Equipment has been delivering reliable and high-performance power equipment to utilities, EPC contractors, industries, and infrastructure developers. Our modern manufacturing and testing infrastructure, combined with stringent quality processes and engineering expertise, enables us to consistently deliver products that meet the demanding requirements of power transmission and distribution applications.
+            Established in 2004, Epicast Power Equipment is a Nashik-based manufacturer of reliable power equipment for transmission and distribution applications. With over two decades of expertise, we specialize in CTs, PTs, HT Metering Cubicles, and allied equipment, delivering precision-engineered solutions built for safety, performance, and long-term reliability.
 
           </p>
 
@@ -34,7 +34,7 @@ export function About() {
                 key={s.label}
                 className="rounded-xl border border-border bg-card p-4 text-center"
               >
-                <div className="font-heading text-2xl font-bold text-primary sm:text-3xl">
+                <div className="font-heading text-2xl font-bold text-brand-red sm:text-3xl">
                   {s.value}
                 </div>
                 <div className="mt-1 text-xs leading-snug text-muted-foreground">

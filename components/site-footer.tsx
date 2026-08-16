@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { Factory, MapPin, Phone, Mail, Globe, Share2, AtSign } from 'lucide-react'
-import { categories } from '@/lib/products'
 
 export function SiteFooter() {
   return (
@@ -9,16 +8,17 @@ export function SiteFooter() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div className="max-w-xs">
             <Link href="/" className="flex items-center gap-2.5">
-              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary-foreground text-primary">
-                <Factory className="h-5 w-5" />
-              </span>
-              <span className="font-heading text-lg font-bold tracking-tight">
-                Forgeline
+              <img
+                src="/images/Logo.png"
+                alt="Epicast Logo"
+                className="h-9 w-auto object-contain brightness-0 invert"
+              />
+              <span className="font-heading text-lg font-bold tracking-tight text-primary-foreground">
+                Epicast
               </span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-primary-foreground/70">
-              Precision manufacturing solutions trusted by enterprises across 30+
-              countries. Engineering excellence since 1986.
+              Precision power transmission & distribution solutions trusted by utilities and industries. Engineering excellence since 2004.
             </p>
             <div className="mt-5 flex gap-3">
               {[Globe, Share2, AtSign].map((Icon, i) => (
@@ -62,16 +62,30 @@ export function SiteFooter() {
               Products
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-primary-foreground/70">
-              {categories.slice(0, 4).map((c) => (
-                <li key={c.slug}>
-                  <Link
-                    href={`/products/${c.slug}`}
-                    className="hover:text-primary-foreground"
-                  >
-                    {c.name}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link
+                  href="/products?category=Current+Transformer"
+                  className="hover:text-primary-foreground"
+                >
+                  Current Transformers
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/products?category=Potential+Transformer"
+                  className="hover:text-primary-foreground"
+                >
+                  Potential Transformers
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/products?category=Metering+Cubicle"
+                  className="hover:text-primary-foreground"
+                >
+                  Metering Cubicles
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -82,22 +96,24 @@ export function SiteFooter() {
             <ul className="mt-4 space-y-3 text-sm text-primary-foreground/70">
               <li className="flex gap-3">
                 <MapPin className="h-5 w-5 shrink-0 text-primary-foreground/50" />
-                <span>1200 Industrial Parkway, Detroit, MI 48201, USA</span>
+                <span>OFFICE -PLOT NO. W
+                  134(A),MIDC AMBAD,NASHIK-10</span>
               </li>
               <li className="flex gap-3">
                 <Phone className="h-5 w-5 shrink-0 text-primary-foreground/50" />
-                <span>+1 (313) 555-0142</span>
+                <span>+91-7350882159</span>
+                <span>+91-9823565857</span>
               </li>
               <li className="flex gap-3">
                 <Mail className="h-5 w-5 shrink-0 text-primary-foreground/50" />
-                <span>info@forgeline.com</span>
+                <span>mkt1.epicastpower@gmail.com</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-primary-foreground/15 pt-6 text-sm text-primary-foreground/60 sm:flex-row">
-          <p>© {new Date().getFullYear()} Forgeline Industries. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Epicast Power Equipment. All rights reserved.</p>
           <p>ISO 9001:2015 Certified</p>
         </div>
       </div>

@@ -33,6 +33,7 @@
   --color-secondary: var(--secondary);
   --color-primary-foreground: var(--primary-foreground);
   --color-primary: var(--primary);
+  --color-brand-red: var(--brand-red);
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
@@ -60,6 +61,7 @@
   /* Dark Blue #052653 */
   --primary: oklch(0.255 0.098 264);
   --primary-foreground: oklch(0.985 0 0);
+  --brand-red: #b5352c;
   --secondary: oklch(0.955 0.006 160);
   --secondary-foreground: oklch(0.255 0.098 264);
   --muted: oklch(0.955 0.006 160);
@@ -95,6 +97,7 @@
   --popover-foreground: oklch(0.985 0 0);
   --primary: oklch(0.922 0 0);
   --primary-foreground: oklch(0.205 0 0);
+  --brand-red: #e2483d;
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);

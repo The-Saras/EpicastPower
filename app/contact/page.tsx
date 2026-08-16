@@ -5,31 +5,31 @@ import { SiteFooter } from '@/components/site-footer'
 import { ContactForm } from '@/components/contact-form'
 
 export const metadata: Metadata = {
-  title: 'Contact — Forgeline Industries',
+  title: 'Contact — Epicast Power Equipment',
   description:
-    'Get in touch with Forgeline Industries. Request a quote, send an inquiry, or visit our manufacturing facility.',
+    'Get in touch with Epicast Power Equipment. Request a quote, send an inquiry, or visit our manufacturing facility.',
 }
 
 const details = [
   {
     icon: MapPin,
     title: 'Address',
-    lines: ['1200 Industrial Parkway', 'Detroit, MI 48201, USA'],
+    lines: ['OFFICE -PLOT NO. W 134(A),MIDC AMBAD,NASHIK-10'],
   },
   {
     icon: Phone,
     title: 'Phone',
-    lines: ['+1 (313) 555-0142', '+1 (313) 555-0188'],
+    lines: ['+91-7350882159', '+91-9823565857'],
   },
   {
     icon: Mail,
     title: 'Email',
-    lines: ['info@forgeline.com', 'sales@forgeline.com'],
+    lines: ['mkt1.epicastpower@gmail.com'],
   },
   {
     icon: Clock,
     title: 'Business Hours',
-    lines: ['Mon – Fri: 8:00 – 18:00', 'Sat: 9:00 – 13:00'],
+    lines: ['Mon – Sat: 9:00 – 18:00', 'Sunday: Closed'],
   },
 ]
 
@@ -81,7 +81,7 @@ export default function ContactPage() {
                     key={d.title}
                     className="rounded-2xl border border-border bg-card p-6 shadow-sm"
                   >
-                    <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-red/10 text-brand-red">
                       <d.icon className="h-5 w-5" />
                     </span>
                     <h3 className="mt-4 font-heading font-bold text-foreground">
@@ -101,8 +101,8 @@ export default function ContactPage() {
 
               <div className="mt-4 overflow-hidden rounded-2xl border border-border shadow-sm">
                 <iframe
-                  title="Forgeline Industries location map"
-                  src="https://www.openstreetmap.org/export/embed.html?bbox=-83.07%2C42.32%2C-83.02%2C42.35&layer=mapnik"
+                  title="Epicast Power Equipment location map"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=73.735%2C19.94%2C73.755%2C19.96&layer=mapnik&marker=19.950%2C73.745"
                   className="h-64 w-full"
                   loading="lazy"
                 />
