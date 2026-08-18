@@ -2,13 +2,13 @@ const directors = [
   {
     name: 'Mr.Atul P. Bedarkar',
     role: 'Director',
-    image: '/directors/dir1.webp',
+    image: '/directors/dir1.jpg',
     bio: "Over 30 years of experience in power and electrical infrastructure.Expertise in manufacturing and power distribution equipment.Leads Epicast with a focus on quality, engineering, and innovation."
   },
   {
     name: 'Prathamesh Bedarkar',
     role: 'Chief Operations Officer',
-    image: '/directors/dir2.webp',
+    image: '/directors/dir2.jpg',
     bio: "Second-generation entrepreneur with an MBA and technical understanding.Drives growth, innovation, R&D, and operational excellence.Focused on building future-ready power solutions and expanding Epicast's reach.",
   },
 
