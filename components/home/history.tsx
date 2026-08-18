@@ -15,9 +15,9 @@ export function VisionMission() {
           <span className="text-sm font-semibold uppercase tracking-wider text-brand-red">
             Our Core Purpose
           </span>
-          <h2 className="mt-3 font-heading text-3xl font-bold tracking-tight text-foreground text-balance sm:text-4xl">
+          {/* <h2 className="mt-3 font-heading text-3xl font-bold tracking-tight text-foreground text-balance sm:text-4xl">
             Our Vision &amp; Mission
-          </h2>
+          </h2> */}
           <p className="mt-4 text-lg text-muted-foreground">
             Empowering the electrical infrastructure of tomorrow through innovation, quality, and strong partnerships.
           </p>
@@ -35,7 +35,7 @@ export function VisionMission() {
                   <Eye className="h-7 w-7" />
                 </span>
                 <h3 className="mt-6 font-heading text-2xl font-bold text-primary-foreground tracking-tight">
-                  Vision
+                  Our Vision
                 </h3>
                 <p className="mt-4 text-base leading-relaxed text-primary-foreground/80 font-normal">
                   To be a trusted leader in power equipment manufacturing by delivering innovative, reliable, and technologically advanced solutions that contribute to efficient, safe, and sustainable power distribution systems.
@@ -67,7 +67,7 @@ export function VisionMission() {
                   <Target className="h-7 w-7" />
                 </span>
                 <h3 className="mt-6 font-heading text-2xl font-bold text-foreground tracking-tight">
-                  Mission
+                  Our Mission
                 </h3>
                 <p className="mt-4 text-base leading-relaxed text-muted-foreground font-normal">
                   To provide high-quality, cost-effective electrical solutions through continuous innovation, precision engineering, stringent quality standards, and a customer-centric approach — building lasting partnerships based on trust and excellence.

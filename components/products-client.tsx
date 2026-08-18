@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { Search, X, Download, Mail, Maximize2 } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import { Button, buttonVariants } from '@/components/ui/button'
 
 export interface Product {
   name: string
@@ -308,18 +308,21 @@ export function ProductsClient() {
               </div>
 
               <div className="mt-8 pt-4 border-t border-border/40 flex flex-col gap-3">
-                <Button asChild className="w-full cursor-pointer">
-                  <a href={`/contact?product=${encodeURIComponent(selectedProduct.name)}`}>
-                    <Mail className="mr-2 h-4 w-4" />
-                    Request a Quote
-                  </a>
-                </Button>
-                <Button variant="outline" asChild className="w-full cursor-pointer">
-                  <a href={selectedProduct.image} download={selectedProduct.fileName}>
-                    <Download className="mr-2 h-4 w-4" />
-                    Download Image
-                  </a>
-                </Button>
+                <a
+                  href={`/contact?product=${encodeURIComponent(selectedProduct.name)}`}
+                  className={buttonVariants({ variant: 'default', className: 'w-full cursor-pointer' })}
+                >
+                  <Mail className="mr-2 h-4 w-4" />
+                  Request a Quote
+                </a>
+                <a
+                  href={selectedProduct.image}
+                  download={selectedProduct.fileName}
+                  className={buttonVariants({ variant: 'outline', className: 'w-full cursor-pointer' })}
+                >
+                  <Download className="mr-2 h-4 w-4" />
+                  Download Image
+                </a>
               </div>
             </div>
           </div>
