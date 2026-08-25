@@ -1,4 +1,4 @@
-import { Eye, Target, Sparkles, Shield } from 'lucide-react'
+import { Compass, Goal, Sparkles, Shield } from 'lucide-react'
 
 export function VisionMission() {
   const visionPills = ['Innovation', 'Reliability', 'Sustainability']
@@ -32,7 +32,7 @@ export function VisionMission() {
             <div className="relative z-10 flex flex-col h-full justify-between">
               <div>
                 <span className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-red/20 text-brand-red shadow-sm border border-brand-red/30">
-                  <Eye className="h-7 w-7" />
+                  <Compass className="h-7 w-7" />
                 </span>
                 <h3 className="mt-6 font-heading text-2xl font-bold text-primary-foreground tracking-tight">
                   Our Vision
@@ -64,7 +64,7 @@ export function VisionMission() {
             <div className="relative z-10 flex flex-col h-full justify-between">
               <div>
                 <span className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary shadow-sm border border-primary/20">
-                  <Target className="h-7 w-7" />
+                  <Goal className="h-7 w-7" />
                 </span>
                 <h3 className="mt-6 font-heading text-2xl font-bold text-foreground tracking-tight">
                   Our Mission

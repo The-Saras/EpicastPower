@@ -27,7 +27,7 @@ export function SiteHeader() {
             className="h-9 w-auto object-contain"
           />
           <span className="font-heading text-lg font-bold tracking-tight text-foreground">
-            Epicast
+            Epicast Power Equipment
           </span>
         </Link>
 

@@ -70,7 +70,7 @@ export function Hero() {
             Precision Manufacturing Since 2004
           </span>
           <h1 className="mt-6 font-heading text-4xl font-bold leading-tight tracking-tight text-primary-foreground text-balance sm:text-5xl lg:text-6xl">
-            Decades of manufacturing excellence in power solutions
+            Leading Manufacturer Of Instrument Transformer and Metering Cubicle.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-primary-foreground/80 text-pretty">
             Epicast Power Equipment designs and manufactures reliable power equipment and customized electrical solutions for power transmission, distribution, utilities, industries, and infrastructure projects.
@@ -118,11 +118,10 @@ export function Hero() {
           <button
             key={index}
             onClick={() => setActiveIndex(index)}
-            className={`h-2.5 rounded-full transition-all duration-300 ${
-              activeIndex === index
+            className={`h-2.5 rounded-full transition-all duration-300 ${activeIndex === index
                 ? 'bg-primary-foreground w-8'
                 : 'bg-primary-foreground/40 hover:bg-primary-foreground/60 w-2.5'
-            }`}
+              }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}

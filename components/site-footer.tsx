@@ -14,7 +14,7 @@ export function SiteFooter() {
                 className="h-9 w-auto object-contain brightness-0 invert"
               />
               <span className="font-heading text-lg font-bold tracking-tight text-primary-foreground">
-                Epicast
+                Epicast Power Equipment
               </span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-primary-foreground/70">
@@ -96,8 +96,11 @@ export function SiteFooter() {
             <ul className="mt-4 space-y-3 text-sm text-primary-foreground/70">
               <li className="flex gap-3">
                 <MapPin className="h-5 w-5 shrink-0 text-primary-foreground/50" />
-                <span>OFFICE -PLOT NO. W
-                  134(A),MIDC AMBAD,NASHIK-10</span>
+                <span>OFFICE(Unit-1) -PLOT NO. W-134(A),MIDC AMBAD,NASHIK-422010</span>
+              </li>
+              <li className="flex gap-3">
+                <MapPin className="h-5 w-5 shrink-0 text-primary-foreground/50" />
+                <span>WORKS(Unit-2) -Datta Nagar Road, MIDC AMBAD,NASIK-422010</span>
               </li>
               <li className="flex gap-3">
                 <Phone className="h-5 w-5 shrink-0 text-primary-foreground/50" />
@@ -107,6 +110,8 @@ export function SiteFooter() {
               <li className="flex gap-3">
                 <Mail className="h-5 w-5 shrink-0 text-primary-foreground/50" />
                 <span>mkt1.epicastpower@gmail.com</span>
+                <Mail className="h-5 w-5 shrink-0 text-primary-foreground/50" />
+                <span>pur2.epicastpower@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -114,7 +119,7 @@ export function SiteFooter() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-primary-foreground/15 pt-6 text-sm text-primary-foreground/60 sm:flex-row">
           <p>© {new Date().getFullYear()} Epicast Power Equipment. All rights reserved.</p>
-          <p>ISO 9001:2015 Certified</p>
+          <p>ISO 14001:2015 Certified</p>
         </div>
       </div>
     </footer>

@@ -9,9 +9,9 @@ const certificationsList = [
     issuer: 'International Organization for Standardization',
     badge: 'Quality Management',
     description: 'Certified Quality Management System for the design, manufacturing, assembly, and testing of current transformers, potential transformers, and electrical metering cubicles.',
-    image: '/certifications/EPICAST POWDER EQUIPMENTS iso_page-0001.jpg',
-    fileUrl: '/certifications/EPICAST POWDER EQUIPMENTS iso_page-0001.jpg',
-    isPdf: false,
+    image: '/certifications/EPICAST_iso.jpeg',
+    fileUrl: '/certifications/EPICAST_iso.pdf',
+    isPdf: true,
   },
   {
     title: 'MSME ZED Certificate',
@@ -29,6 +29,15 @@ const certificationsList = [
     description: 'Approved vendor for 11 kV HT Metering Cubicles, 11 kV Dry Type Potential Transformers, and 11kV/22kV/33kV Current Transformers.',
     image: '/certifications/epicast_power_no_14848_page_1.jpg',
     fileUrl: '/certifications/Epicast Power No 14848.pdf',
+    isPdf: true,
+  },
+  {
+    title: 'GST Registration Certificate',
+    issuer: 'Government of India',
+    badge: 'Tax Compliance',
+    description: 'Goods and Services Tax Registration Certificate under the Government of India, verifying our tax compliance and business registration status.',
+    image: '/certifications/epicast_udyam.jpeg',
+    fileUrl: '/certifications/epicast_udyam.pdf',
     isPdf: true,
   },
 ]
@@ -78,7 +87,7 @@ export function Certifications() {
           </p>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {certificationsList.map((cert) => (
             <div
               key={cert.title}
@@ -87,7 +96,7 @@ export function Certifications() {
               <div>
                 {/* Certificate Preview Image */}
                 <div
-                  className="relative h-80 w-full overflow-hidden border-b border-border/50 bg-muted cursor-pointer"
+                  className="relative h-80 w-full overflow-hidden bg-muted cursor-pointer"
                   onClick={() => handleCardClick(cert)}
                 >
                   <img
@@ -112,32 +121,10 @@ export function Certifications() {
                     </span>
                   </div>
                 </div>
-
-                {/* Card Content */}
-                <div className="p-6">
-                  <div className="flex items-center gap-2">
-                    <span className="inline-flex items-center rounded-full bg-brand-red/10 border border-brand-red/20 px-2.5 py-0.5 text-xs font-semibold text-brand-red">
-                      {cert.badge}
-                    </span>
-                    <span className="text-xs text-muted-foreground font-medium flex items-center gap-1">
-                      <CheckCircle2 className="h-3.5 w-3.5 text-primary" />
-                      Verified
-                    </span>
-                  </div>
-                  <h3 className="mt-4 font-heading text-xl font-bold text-foreground">
-                    {cert.title}
-                  </h3>
-                  <p className="mt-1 text-xs font-medium text-muted-foreground uppercase tracking-wider">
-                    {cert.issuer}
-                  </p>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground/90">
-                    {cert.description}
-                  </p>
-                </div>
               </div>
 
               {/* Action Button */}
-              <div className="p-6 pt-0">
+              <div className="p-4">
                 <button
                   onClick={() => handleCardClick(cert)}
                   className="inline-flex w-full items-center justify-center gap-1.5 rounded-lg border border-border bg-background py-2.5 px-4 text-sm font-medium text-foreground transition-colors hover:bg-muted hover:text-foreground cursor-pointer"
@@ -225,3 +212,6 @@ export function Certifications() {
     </section>
   )
 }
+
+
+//indoor outdoor category in products 
