@@ -14,21 +14,21 @@ export interface Product {
 
 export const products: Product[] = [
   {
-    name: '11 KV 22 KV POTENTIAL TRANSFORMER',
+    name: '11 KV 22 KV POTENTIAL TRANSFORMER (Outdoor)',
     fileName: '11 KV 22 KV POTENTIAL TRANSFORMER.png',
     image: '/PRODUCT IMAGES/11 KV 22 KV POTENTIAL TRANSFORMER.png',
     category: 'Potential Transformer',
     description: 'High-accuracy indoor/outdoor potential transformer designed for 11 KV and 22 KV electrical systems. Engineered for durability, high insulation resistance, and reliable voltage measurement.',
   },
   {
-    name: '11 KV 22KV POTENTIAL TRANSFORMER',
+    name: '11 KV 22KV POTENTIAL TRANSFORMER(Indoor)',
     fileName: '11 KV 22KV POTENTIAL TRANSFORMER.png',
     image: '/PRODUCT IMAGES/11 KV 22KV POTENTIAL TRANSFORMER.png',
     category: 'Potential Transformer',
     description: 'Alternative design for 11 KV / 22 KV potential transformer, offering reliable voltage stepping and monitoring in power distribution networks.',
   },
   {
-    name: '11KV 22KV CURRENT TRANSFORMER',
+    name: '11KV 22KV CURRENT TRANSFORMER (Outdoor)',
     fileName: '11KV 22KV CURRENT TRANSFORMER.png',
     image: '/PRODUCT IMAGES/11KV 22KV CURRENT TRANSFORMER.png',
     category: 'Current Transformer',
@@ -42,14 +42,14 @@ export const products: Product[] = [
     description: 'Three-phase voltage transformer designed for simultaneous monitoring of all three phases, ensuring system balance and reliable instrumentation inputs.',
   },
   {
-    name: '33 KV POTENTIAL TRANSFORMER',
+    name: '33 KV POTENTIAL TRANSFORMER (Outdoor)',
     fileName: '33 KV POTENTIAL TRANSFORMER.png',
     image: '/PRODUCT IMAGES/33 KV POTENTIAL TRANSFORMER.png',
     category: 'Potential Transformer',
     description: 'Heavy-duty 33 KV potential transformer built to withstand extreme electrical and environmental conditions while delivering accurate metering and relaying voltage.',
   },
   {
-    name: '33KV CURRENT TRANSFORMER',
+    name: '33KV CURRENT TRANSFORMER (Outdoor)',
     fileName: '33KV CURRENT TRANSFORMER.png',
     image: '/PRODUCT IMAGES/33KV CURRENT TRANSFORMER.png',
     category: 'Current Transformer',
@@ -90,6 +90,21 @@ export const products: Product[] = [
     category: 'Potential Transformer',
     description: 'Outdoor oil-cooled potential transformer. Combines oil insulation with robust construction to deliver continuous voltage monitoring in high-voltage grids.',
   },
+  {
+    name: '11 kv 22 kv current transformer (indoor)',
+    fileName: '11 kv 22 kv current transformer (indoor).png',
+    image: '/PRODUCT IMAGES/11 kv 22 kv current transformer (indoor).png',
+    category: 'Current Transformer',
+    description: '11 kv 22 kv current transformer (indoor). Combines oil insulation with robust construction to deliver continuous voltage monitoring in high-voltage grids.',
+  },
+  {
+    name: '33 KV current transformer (Indoor)',
+    fileName: '33 KV current transformer (indoor).png',
+    image: '/PRODUCT IMAGES/33 KV current transformer (indoor).png',
+    category: 'Current Transformer',
+    description: '33 KV current transformer (Indoor). Combines oil insulation with robust construction to deliver continuous voltage monitoring in high-voltage grids.',
+  },
+
 ]
 
 const categories = ['All', 'Current Transformer', 'Potential Transformer', 'Metering Cubicle']
@@ -154,11 +169,10 @@ export function ProductsClient() {
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
-              className={`rounded-full px-5 py-2.5 text-sm font-semibold transition-all duration-200 border cursor-pointer ${
-                selectedCategory === cat
-                  ? 'bg-brand-red text-white border-brand-red shadow-sm'
-                  : 'bg-card text-muted-foreground border-border hover:bg-muted/50 hover:text-foreground'
-              }`}
+              className={`rounded-full px-5 py-2.5 text-sm font-semibold transition-all duration-200 border cursor-pointer ${selectedCategory === cat
+                ? 'bg-brand-red text-white border-brand-red shadow-sm'
+                : 'bg-card text-muted-foreground border-border hover:bg-muted/50 hover:text-foreground'
+                }`}
             >
               {cat === 'All' ? 'All Products' : cat + 's'}
             </button>
@@ -296,14 +310,14 @@ export function ProductsClient() {
                       {selectedProduct.description}
                     </p>
                   </div>
-                  <div>
+                  {/* <div>
                     <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
                       File Source
                     </h4>
                     <p className="mt-1 text-sm font-mono text-muted-foreground">
                       /public/PRODUCT IMAGES/{selectedProduct.fileName}
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 

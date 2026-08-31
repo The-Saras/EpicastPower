@@ -10,26 +10,78 @@ export const metadata: Metadata = {
     'Get in touch with Epicast Power Equipment. Request a quote, send an inquiry, or visit our manufacturing facility.',
 }
 
-const details = [
+interface ContactItem {
+  label: string
+  value: string
+  href?: string
+}
+
+interface ContactDetail {
+  icon: typeof MapPin
+  title: string
+  items: ContactItem[]
+}
+
+const details: ContactDetail[] = [
   {
     icon: MapPin,
-    title: 'Address',
-    lines: ['OFFICE -PLOT NO. W 134(A),MIDC AMBAD,NASHIK-10'],
+    title: 'Locations',
+    items: [
+      {
+        label: 'Office (Unit-1)',
+        value: 'Plot No. W-134(A), MIDC Ambad, Nashik - 422010',
+      },
+      {
+        label: 'Works (Unit-2)',
+        value: 'Datta Nagar Road, MIDC Ambad, Nashik - 422010',
+      },
+    ],
   },
   {
     icon: Phone,
-    title: 'Phone',
-    lines: ['+91-7350882159', '+91-9823565857'],
+    title: 'Phone Numbers',
+    items: [
+      {
+        label: 'Sales & Inquiries',
+        value: '+91-7350882159',
+        href: 'tel:+917350882159',
+      },
+      {
+        label: 'Operations & Support',
+        value: '+91-9823565857',
+        href: 'tel:+919823565857',
+      },
+    ],
   },
   {
     icon: Mail,
-    title: 'Email',
-    lines: ['mkt1.epicastpower@gmail.com'],
+    title: 'Email Addresses',
+    items: [
+      {
+        label: 'Marketing / Sales',
+        value: 'mkt1.epicastpower@gmail.com',
+        href: 'mailto:mkt1.epicastpower@gmail.com',
+      },
+      {
+        label: 'Purchases / Vendors',
+        value: 'pur2.epicastpower@gmail.com',
+        href: 'mailto:pur2.epicastpower@gmail.com',
+      },
+    ],
   },
   {
     icon: Clock,
     title: 'Business Hours',
-    lines: ['Mon – Sat: 9:00 – 18:00', 'Sunday: Closed'],
+    items: [
+      {
+        label: 'Working Hours',
+        value: 'Mon – Sat: 9:00 – 18:00',
+      },
+      {
+        label: 'Weekly Off',
+        value: 'Sunday: Closed',
+      },
+    ],
   },
 ]
 
@@ -79,22 +131,37 @@ export default function ContactPage() {
                 {details.map((d) => (
                   <div
                     key={d.title}
-                    className="rounded-2xl border border-border bg-card p-6 shadow-sm"
+                    className="flex flex-col justify-between rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:shadow-md hover:border-primary/20"
                   >
-                    <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-red/10 text-brand-red">
-                      <d.icon className="h-5 w-5" />
-                    </span>
-                    <h3 className="mt-4 font-heading font-bold text-foreground">
-                      {d.title}
-                    </h3>
-                    {d.lines.map((line) => (
-                      <p
-                        key={line}
-                        className="mt-1 text-sm leading-relaxed text-muted-foreground"
-                      >
-                        {line}
-                      </p>
-                    ))}
+                    <div>
+                      <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-red/10 text-brand-red">
+                        <d.icon className="h-5 w-5" />
+                      </span>
+                      <h3 className="mt-4 font-heading font-bold text-foreground">
+                        {d.title}
+                      </h3>
+                      <div className="mt-3 space-y-2.5">
+                        {d.items.map((item, idx) => (
+                          <div key={idx} className="text-sm">
+                            <span className="block text-xs font-semibold text-muted-foreground uppercase tracking-wide">
+                              {item.label}
+                            </span>
+                            {item.href ? (
+                              <a
+                                href={item.href}
+                                className="mt-0.5 block leading-relaxed text-muted-foreground hover:text-primary transition-colors break-all"
+                              >
+                                {item.value}
+                              </a>
+                            ) : (
+                              <p className="mt-0.5 leading-relaxed text-muted-foreground">
+                                {item.value}
+                              </p>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 ))}
               </div>
