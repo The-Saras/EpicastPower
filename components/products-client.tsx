@@ -91,15 +91,15 @@ export const products: Product[] = [
     description: 'Outdoor oil-cooled potential transformer. Combines oil insulation with robust construction to deliver continuous voltage monitoring in high-voltage grids.',
   },
   {
-    name: '11 kv 22 kv current transformer (indoor)',
+    name: '11 kv 22 kv CURRENT TRANSFORMER (Indoor)',
     fileName: '11 kv 22 kv current transformer (indoor).png',
     image: '/PRODUCT IMAGES/11 kv 22 kv current transformer (indoor).png',
     category: 'Current Transformer',
     description: '11 kv 22 kv current transformer (indoor). Combines oil insulation with robust construction to deliver continuous voltage monitoring in high-voltage grids.',
   },
   {
-    name: '33 KV current transformer (Indoor)',
-    fileName: '33 KV current transformer (indoor).png',
+    name: '33 KV CURRENT TRANSFORMER (Indoor)',
+    fileName: '33 KV CURRENT TRANSFORMER (indoor).png',
     image: '/PRODUCT IMAGES/33 KV current transformer (indoor).png',
     category: 'Current Transformer',
     description: '33 KV current transformer (Indoor). Combines oil insulation with robust construction to deliver continuous voltage monitoring in high-voltage grids.',
