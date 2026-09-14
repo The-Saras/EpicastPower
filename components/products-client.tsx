@@ -104,6 +104,13 @@ export const products: Product[] = [
     category: 'Current Transformer',
     description: '33 KV current transformer (Indoor). Combines oil insulation with robust construction to deliver continuous voltage monitoring in high-voltage grids.',
   },
+  {
+    name: 'Potential transformer-GunType 11/22/33 KV',
+    fileName: 'Potential-transformer-guntype.png',
+    image: '/PRODUCT IMAGES/Potential-transformer-guntype.png',
+    category: 'Potential Transformer',
+    description: 'Potential transformer (Gun-type). Compact and reliable design for voltage measurement, featuring durable insulation and consistent performance in power distribution.',
+  },
 
 ]
 

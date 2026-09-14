@@ -75,11 +75,11 @@ const details: ContactDetail[] = [
     items: [
       {
         label: 'Working Hours',
-        value: 'Mon – Sat: 9:00 – 18:00',
+        value: 'Mon – Friday | Sunday: 9:00 AM – 6:00 PM',
       },
       {
         label: 'Weekly Off',
-        value: 'Sunday: Closed',
+        value: 'Saturday: Closed',
       },
     ],
   },

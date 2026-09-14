@@ -34,12 +34,23 @@ export function Clients() {
       name: 'ABB Group',
       logo: '/clients-logo/kisspng-abb-group-automation-industry-company-product-5acae76aa1f3f3.4118179915232469546634-removebg-preview.png',
     },
+    {
+      id: 7,
+      name: 'Megha Electromech pvt Ltd',
+      logo: '/clients-logo/Megha.jpeg',
+    },
+    {
+      id: 8,
+      name: 'Madhya Pradesh Jal Nigam Maryadit ',
+      logo: '/clients-logo/mpgov.jpg',
+    },
   ]
 
   const batches = [
     [clients[0], clients[1]],
     [clients[2], clients[3]],
     [clients[4], clients[5]],
+    [clients[6], clients[7]],
   ]
 
   const [activeIndex, setActiveIndex] = useState(0)
@@ -101,11 +112,10 @@ export function Clients() {
             <button
               key={index}
               onClick={() => setActiveIndex(index)}
-              className={`h-2.5 rounded-full transition-all duration-300 ${
-                activeIndex === index
-                  ? 'bg-primary w-8'
-                  : 'bg-primary/20 hover:bg-primary/40 w-2.5'
-              }`}
+              className={`h-2.5 rounded-full transition-all duration-300 ${activeIndex === index
+                ? 'bg-primary w-8'
+                : 'bg-primary/20 hover:bg-primary/40 w-2.5'
+                }`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}

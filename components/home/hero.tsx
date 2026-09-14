@@ -73,29 +73,10 @@ export function Hero() {
             Decades of manufacturing excellence in power solutions
           </h1>
           <p className="mt-4 text-lg font-medium text-primary-foreground/90 sm:text-xl">
-            Leading Manufacturer Of Instrument Transformer and Metering Cubicle.
+            #Leading Manufacturer Of Instrument Transformer and Metering Cubicle.
           </p>
-          <p className="mt-4 max-w-xl text-base leading-relaxed text-primary-foreground/80 text-pretty sm:text-lg">
-            Epicast Power Equipment designs and manufactures reliable power equipment and customized electrical solutions for power transmission, distribution, utilities, industries, and infrastructure projects.
-          </p>
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <Button
-              size="lg"
-              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
-            >
-              <Link href="/products">
-                Explore Products
-                <ArrowRight className="ml-1 h-4 w-4" />
-              </Link>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-primary-foreground/40 bg-transparent text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
-            >
-              <Link href="/contact">Contact Us</Link>
-            </Button>
-          </div>
+
+
         </div>
       </div>
 
