@@ -14,22 +14,22 @@ export interface Product {
 
 export const products: Product[] = [
   {
-    name: '11 KV 22 KV POTENTIAL TRANSFORMER (Outdoor)',
+    name: '11KV / 22KV POTENTIAL TRANSFORMER (Outdoor)',
     fileName: '11 KV 22 KV POTENTIAL TRANSFORMER.png',
     image: '/PRODUCT IMAGES/11 KV 22 KV POTENTIAL TRANSFORMER.png',
     category: 'Potential Transformer',
     description: 'High-accuracy indoor/outdoor potential transformer designed for 11 KV and 22 KV electrical systems. Engineered for durability, high insulation resistance, and reliable voltage measurement.',
   },
   {
-    name: '11 KV 22KV POTENTIAL TRANSFORMER(Indoor)',
+    name: '11KV / 22KV POTENTIAL TRANSFORMER(Indoor)',
     fileName: '11 KV 22KV POTENTIAL TRANSFORMER.png',
     image: '/PRODUCT IMAGES/11 KV 22KV POTENTIAL TRANSFORMER.png',
     category: 'Potential Transformer',
     description: 'Alternative design for 11 KV / 22 KV potential transformer, offering reliable voltage stepping and monitoring in power distribution networks.',
   },
   {
-    name: '11KV 22KV CURRENT TRANSFORMER (Outdoor)',
-    fileName: '11KV 22KV CURRENT TRANSFORMER.png',
+    name: '11KV / 22KV CURRENT TRANSFORMER (Outdoor)',
+    fileName: '11KV/22KV CURRENT TRANSFORMER.png',
     image: '/PRODUCT IMAGES/11KV 22KV CURRENT TRANSFORMER.png',
     category: 'Current Transformer',
     description: '11 KV to 22 KV medium voltage current transformer. Provides precise current measurement and protection, featuring high thermal and dynamic stability.',
@@ -91,7 +91,7 @@ export const products: Product[] = [
     description: 'Outdoor oil-cooled potential transformer. Combines oil insulation with robust construction to deliver continuous voltage monitoring in high-voltage grids.',
   },
   {
-    name: '11 kv 22 kv CURRENT TRANSFORMER (Indoor)',
+    name: '11KV / 22KV CURRENT TRANSFORMER (Indoor)',
     fileName: '11 kv 22 kv current transformer (indoor).png',
     image: '/PRODUCT IMAGES/11 kv 22 kv current transformer (indoor).png',
     category: 'Current Transformer',

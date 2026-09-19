@@ -115,7 +115,7 @@ export function SiteFooter() {
                     href="tel:+917350882159"
                     className="hover:text-primary-foreground transition-colors"
                   >
-                    +91-7350882159
+                    +91-9730537603
                   </a>
                   <a
                     href="tel:+919823565857"
