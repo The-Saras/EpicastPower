@@ -112,7 +112,7 @@ export function SiteFooter() {
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-primary-foreground/50" />
                 <div className="flex flex-col gap-1">
                   <a
-                    href="tel:+917350882159"
+                    href="tel:+91-9730537603"
                     className="hover:text-primary-foreground transition-colors"
                   >
                     +91-9730537603

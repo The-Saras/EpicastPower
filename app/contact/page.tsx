@@ -43,8 +43,8 @@ const details: ContactDetail[] = [
     items: [
       {
         label: 'Sales & Inquiries',
-        value: '+91-7350882159',
-        href: 'tel:+917350882159',
+        value: '+91-9730537603',
+        href: 'tel:+919730537603'
       },
       {
         label: 'Operations & Support',
