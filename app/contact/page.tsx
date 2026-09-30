@@ -3,11 +3,28 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import { ContactForm } from '@/components/contact-form'
+import { getBreadcrumbSchema } from '@/lib/structured-data'
 
 export const metadata: Metadata = {
-  title: 'Contact — Epicast Power Equipment',
+  title: 'Contact Us — Request a Quote & Manufacturing Inquiries',
   description:
-    'Get in touch with Epicast Power Equipment. Request a quote, send an inquiry, or visit our manufacturing facility.',
+    'Get in touch with Epicast Power Equipment. Request a custom quote, technical specifications, or visit our facility in MIDC Ambad, Nashik.',
+  alternates: {
+    canonical: '/contact',
+  },
+  openGraph: {
+    title: 'Contact Us — Epicast Power Equipment',
+    description:
+      'Get in touch with Epicast Power Equipment. Request a custom quote, technical specifications, or visit our facility in MIDC Ambad, Nashik.',
+    url: '/contact',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Us — Epicast Power Equipment',
+    description:
+      'Get in touch with Epicast Power Equipment in MIDC Ambad, Nashik. Request a quote or technical discussion.',
+  },
 }
 
 interface ContactItem {
@@ -44,7 +61,7 @@ const details: ContactDetail[] = [
       {
         label: 'Sales & Inquiries',
         value: '+91-9730537603',
-        href: 'tel:+919730537603'
+        href: 'tel:+919730537603',
       },
       {
         label: 'Operations & Support',
@@ -86,8 +103,19 @@ const details: ContactDetail[] = [
 ]
 
 export default function ContactPage() {
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Contact', url: '/contact' },
+  ])
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
+      />
       <SiteHeader />
       <main>
         <section className="bg-primary text-primary-foreground">
