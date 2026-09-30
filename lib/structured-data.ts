@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: 'Epicast Power Equipment',
   legalName: 'Epicast Power Equipment Pvt. Ltd.',
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://epicastpower.com',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.epicastpower.in',
   description:
     'Epicast Power Equipment designs and manufactures precision power transmission, distribution equipment, precision CNC machined parts, and heavy-duty industrial assemblies.',
   foundingDate: '2004',
