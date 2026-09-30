@@ -2,16 +2,55 @@ import type { Metadata } from 'next'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import { ProductsClient } from '@/components/products-client'
+import { categories } from '@/lib/products'
+import {
+  getProductsItemListSchema,
+  getBreadcrumbSchema,
+} from '@/lib/structured-data'
 
 export const metadata: Metadata = {
-  title: 'Products — Epicast Power Equipment',
+  title: 'Products & Capabilities',
   description:
-    'Explore our range of high-quality power distribution equipment, transmission hardware, and custom electrical solutions.',
+    'Explore our precision power transmission equipment, CNC machined parts, industrial assemblies, metal fabrication, and custom manufacturing solutions.',
+  alternates: {
+    canonical: '/products',
+  },
+  openGraph: {
+    title: 'Products & Capabilities — Epicast Power Equipment',
+    description:
+      'Explore our precision power transmission equipment, CNC machined parts, industrial assemblies, metal fabrication, and custom manufacturing solutions.',
+    url: '/products',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Products & Capabilities — Epicast Power Equipment',
+    description:
+      'Explore our precision power transmission equipment, CNC machined parts, industrial assemblies, and metal fabrication.',
+  },
 }
 
 export default function ProductsPage() {
+  const productsSchema = getProductsItemListSchema(categories)
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Products', url: '/products' },
+  ])
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(productsSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
+      />
       <SiteHeader />
       <main>
         <section className="bg-primary text-primary-foreground">
@@ -36,4 +75,3 @@ export default function ProductsPage() {
     </>
   )
 }
-
