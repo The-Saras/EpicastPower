@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Search, X, Download, Mail, Maximize2 } from 'lucide-react'
+import { Search, X, Mail, Maximize2 } from 'lucide-react'
 import { Button, buttonVariants } from '@/components/ui/button'
 
 export interface Product {
@@ -244,10 +244,7 @@ export function ProductsClient() {
                 <p className="mt-2 text-xs text-muted-foreground line-clamp-2 leading-relaxed">
                   {product.description}
                 </p>
-                <div className="mt-4 pt-4 border-t border-border/40 flex items-center justify-between">
-                  <span className="text-xs font-semibold text-muted-foreground">
-                    {product.fileName.split('.').pop()?.toUpperCase()} Image
-                  </span>
+                <div className="mt-auto pt-4 border-t border-border/40 flex items-center justify-end">
                   <span className="text-xs font-semibold text-brand-red group-hover:underline">
                     View Details
                   </span>
@@ -317,14 +314,6 @@ export function ProductsClient() {
                       {selectedProduct.description}
                     </p>
                   </div>
-                  {/* <div>
-                    <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
-                      File Source
-                    </h4>
-                    <p className="mt-1 text-sm font-mono text-muted-foreground">
-                      /public/PRODUCT IMAGES/{selectedProduct.fileName}
-                    </p>
-                  </div> */}
                 </div>
               </div>
 
@@ -335,14 +324,6 @@ export function ProductsClient() {
                 >
                   <Mail className="mr-2 h-4 w-4" />
                   Request a Quote
-                </a>
-                <a
-                  href={selectedProduct.image}
-                  download={selectedProduct.fileName}
-                  className={buttonVariants({ variant: 'outline', className: 'w-full cursor-pointer' })}
-                >
-                  <Download className="mr-2 h-4 w-4" />
-                  Download Image
                 </a>
               </div>
             </div>
