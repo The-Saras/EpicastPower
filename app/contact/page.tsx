@@ -197,9 +197,11 @@ export default function ContactPage() {
               <div className="mt-4 overflow-hidden rounded-2xl border border-border shadow-sm">
                 <iframe
                   title="Epicast Power Equipment location map"
-                  src="https://www.openstreetmap.org/export/embed.html?bbox=73.735%2C19.94%2C73.755%2C19.96&layer=mapnik&marker=19.950%2C73.745"
-                  className="h-64 w-full"
+                  src="https://maps.google.com/maps?q=Plot+No.+W-134(A),+MIDC+Ambad,+Nashik+422010&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  className="h-64 w-full border-0"
                   loading="lazy"
+                  allowFullScreen
+                  referrerPolicy="no-referrer-when-downgrade"
                 />
               </div>
             </div>

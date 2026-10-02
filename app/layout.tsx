@@ -90,11 +90,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: [
-      { url: '/icon.svg', type: 'image/svg+xml' },
-      { url: '/icon-dark-32x32.png', sizes: '32x32', type: 'image/png' },
-    ],
-    apple: [{ url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }],
+    icon: [{ url: '/images/Logo.png', type: 'image/png' }],
+    shortcut: ['/images/Logo.png'],
+    apple: [{ url: '/images/Logo.png', type: 'image/png' }],
   },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '',
@@ -118,6 +116,8 @@ export default function RootLayout({
       className={`${manrope.variable} ${inter.variable} bg-background`}
     >
       <head>
+        <link rel="icon" href="/images/Logo.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/images/Logo.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
