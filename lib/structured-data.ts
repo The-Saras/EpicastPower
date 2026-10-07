@@ -3,7 +3,7 @@ export const siteConfig = {
   legalName: 'Epicast Power Equipment Pvt. Ltd.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.epicastpower.in',
   description:
-    'Epicast Power Equipment designs and manufactures precision power transmission, distribution equipment, precision CNC machined parts, and heavy-duty industrial assemblies.',
+    'Established in 2004, Epicast Power Equipment is a Nashik-based manufacturer of reliable power equipment for transmission and distribution applications. With over two decades of expertise, we specialize in CTs, PTs, HT Metering Cubicles, and allied equipment, delivering precision-engineered solutions built for safety, performance, and long-term reliability.',
   foundingDate: '2004',
   telephone: '+91-9730537603',
   altTelephone: '+91-9823565857',
