@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { Building2, Award, ThumbsUp } from 'lucide-react'
 
 export function Clients() {
   const clients = [
@@ -121,18 +122,48 @@ export function Clients() {
           ))}
         </div>
 
-        <div className="mt-20 grid grid-cols-1 gap-8 border-t border-border pt-12 md:grid-cols-3">
-          <div className="text-center">
-            <div className="text-3xl font-bold text-primary">500+</div>
-            <p className="mt-2 text-muted-foreground">Active Clients Across India</p>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-primary">25+</div>
-            <p className="mt-2 text-muted-foreground">Years of Partnership</p>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-primary">98%</div>
-            <p className="mt-2 text-muted-foreground">Client Satisfaction Rate</p>
+        {/* Key Metrics Banner */}
+        <div className="relative mt-16 overflow-hidden rounded-2xl bg-gradient-to-br from-primary via-[#072d62] to-[#041d40] px-6 py-10 shadow-xl border border-primary/20 sm:mt-20 sm:rounded-3xl sm:px-10 sm:py-12">
+          {/* Ambient Glows */}
+          <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-brand-red/15 blur-3xl" />
+          <div className="pointer-events-none absolute -left-16 -bottom-16 h-48 w-48 rounded-full bg-white/10 blur-3xl" />
+
+          <div className="relative z-10 grid grid-cols-1 gap-8 divide-y divide-white/10 md:grid-cols-3 md:gap-0 md:divide-y-0 md:divide-x md:divide-white/15">
+            <div className="flex flex-col items-center text-center md:px-6">
+              <span className="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-white/10 text-white border border-white/15 shadow-sm backdrop-blur-sm">
+                <Building2 className="h-5 w-5 text-brand-red" />
+              </span>
+              <div className="font-heading text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
+                500<span className="text-brand-red">+</span>
+              </div>
+              <p className="mt-2 text-sm font-medium text-white/80 sm:text-base">
+                Active Clients Across India
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center pt-8 text-center md:pt-0 md:px-6">
+              <span className="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-white/10 text-white border border-white/15 shadow-sm backdrop-blur-sm">
+                <Award className="h-5 w-5 text-brand-red" />
+              </span>
+              <div className="font-heading text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
+                25<span className="text-brand-red">+</span>
+              </div>
+              <p className="mt-2 text-sm font-medium text-white/80 sm:text-base">
+                Years of Partnership
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center pt-8 text-center md:pt-0 md:px-6">
+              <span className="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-white/10 text-white border border-white/15 shadow-sm backdrop-blur-sm">
+                <ThumbsUp className="h-5 w-5 text-brand-red" />
+              </span>
+              <div className="font-heading text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
+                98<span className="text-brand-red">%</span>
+              </div>
+              <p className="mt-2 text-sm font-medium text-white/80 sm:text-base">
+                Client Satisfaction Rate
+              </p>
+            </div>
           </div>
         </div>
       </div>

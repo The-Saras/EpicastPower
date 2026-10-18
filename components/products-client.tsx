@@ -56,6 +56,13 @@ export const products: Product[] = [
     description: '33 KV outdoor current transformer designed for system protection and metering in substations and heavy industrial distribution networks.',
   },
   {
+    name: '33 KV potential transformer (indoor)',
+    fileName: 'Potential-transformer-guntype.png',
+    image: '/PRODUCT IMAGES/11 KV 22KV POTENTIAL TRANSFORMER.png',
+    category: 'Potential Transformer',
+    description: 'Potential transformer (Gun-type). Compact and reliable design for voltage measurement, featuring durable insulation and consistent performance in power distribution.',
+  },
+  {
     name: 'BAR TYPE CURRENT TRANSFORMER',
     fileName: 'BAR TYPE CURRENT TRANSFORMER.png',
     image: '/PRODUCT IMAGES/BAR TYPE CURRENT TRANSFORMER.png',
@@ -111,6 +118,7 @@ export const products: Product[] = [
     category: 'Potential Transformer',
     description: 'Potential transformer (Gun-type). Compact and reliable design for voltage measurement, featuring durable insulation and consistent performance in power distribution.',
   },
+
 
 ]
 

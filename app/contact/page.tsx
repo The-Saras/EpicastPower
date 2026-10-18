@@ -194,15 +194,26 @@ export default function ContactPage() {
                 ))}
               </div>
 
-              <div className="mt-4 overflow-hidden rounded-2xl border border-border shadow-sm">
+              <div className="mt-4 overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
                 <iframe
-                  title="Epicast Power Equipment location map"
-                  src="https://maps.google.com/maps?q=Plot+No.+W-134(A),+MIDC+Ambad,+Nashik+422010&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                  className="h-64 w-full border-0"
+                  title="EPICAST POWER EQUIPMENT Location Map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.658763836374!2d73.72260017582524!3d19.946613381446777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdd93001fd2eead%3A0x7987ddc56b0eb309!2sEPICAST%20POWER%20EQUIPMENT!5e0!3m2!1sen!2sin!4v1729270000000!5m2!1sen!2sin"
+                  className="h-72 w-full border-0"
                   loading="lazy"
                   allowFullScreen
                   referrerPolicy="no-referrer-when-downgrade"
                 />
+                <div className="flex items-center justify-between border-t border-border/60 bg-muted/30 px-4 py-2.5 text-xs text-muted-foreground">
+                  <span className="font-semibold text-foreground">EPICAST POWER EQUIPMENT</span>
+                  <a
+                    href="https://www.google.com/maps/place/EPICAST+POWER+EQUIPMENT/@19.9466133,73.7251751,17z/data=!3m1!4b1!4m6!3m5!1s0x3bdd93001fd2eead:0x7987ddc56b0eb309!8m2!3d19.9466133!4d73.7251751!16s%2Fg%2F11y_m94ql0!18m1!1e1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium text-primary hover:underline inline-flex items-center gap-1"
+                  >
+                    Open in Google Maps &rarr;
+                  </a>
+                </div>
               </div>
             </div>
           </div>
