@@ -28,7 +28,7 @@ export const siteConfig = {
     longitude: 73.745,
   },
   openingHours: [
-    'Mo-Fr 09:00-18:00',
+    'Mon-Fr 09:00-18:00',
     'Su 09:00-18:00',
   ],
   certifications: [

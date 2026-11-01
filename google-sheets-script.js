@@ -25,7 +25,7 @@ function doPost(e) {
   try {
     const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
     const sheet = spreadsheet.getSheetByName(SHEET_NAME) || spreadsheet.getActiveSheet();
-    
+
     // Auto-create headers if sheet is empty
     if (sheet.getLastRow() === 0) {
       sheet.appendRow(["Timestamp", "Name", "Email", "Phone", "Message"]);
@@ -35,7 +35,7 @@ function doPost(e) {
       headerRange.setFontColor("#ffffff");  // White text
       sheet.setFrozenRows(1);
     }
-    
+
     let data = {};
     if (e && e.postData && e.postData.contents) {
       try {
@@ -76,3 +76,5 @@ function doGet(e) {
     message: "POST requests with contact details will be recorded to this sheet."
   })).setMimeType(ContentService.MimeType.JSON);
 }
+
+
