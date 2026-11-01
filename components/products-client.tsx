@@ -13,90 +13,7 @@ export interface Product {
 }
 
 export const products: Product[] = [
-  {
-    name: '11KV / 22KV POTENTIAL TRANSFORMER (Outdoor)',
-    fileName: '11 KV 22 KV POTENTIAL TRANSFORMER.png',
-    image: '/PRODUCT IMAGES/11 KV 22 KV POTENTIAL TRANSFORMER.png',
-    category: 'Potential Transformer',
-    description: 'High-accuracy indoor/outdoor potential transformer designed for 11 KV and 22 KV electrical systems. Engineered for durability, high insulation resistance, and reliable voltage measurement.',
-  },
-  {
-    name: '11KV / 22KV POTENTIAL TRANSFORMER(Indoor)',
-    fileName: '11 KV 22KV POTENTIAL TRANSFORMER.png',
-    image: '/PRODUCT IMAGES/11 KV 22KV POTENTIAL TRANSFORMER.png',
-    category: 'Potential Transformer',
-    description: 'Alternative design for 11 KV / 22 KV potential transformer, offering reliable voltage stepping and monitoring in power distribution networks.',
-  },
-  {
-    name: '11KV / 22KV CURRENT TRANSFORMER (Outdoor)',
-    fileName: '11KV/22KV CURRENT TRANSFORMER.png',
-    image: '/PRODUCT IMAGES/11KV 22KV CURRENT TRANSFORMER.png',
-    category: 'Current Transformer',
-    description: '11 KV to 22 KV medium voltage current transformer. Provides precise current measurement and protection, featuring high thermal and dynamic stability.',
-  },
-  {
-    name: '3 PHASE POTENTIAL TRANSFORMER',
-    fileName: '3 PHASE POTENTIAL TRANSFORMER.png',
-    image: '/PRODUCT IMAGES/3 PHASE POTENTIAL TRANSFORMER.png',
-    category: 'Potential Transformer',
-    description: 'Three-phase voltage transformer designed for simultaneous monitoring of all three phases, ensuring system balance and reliable instrumentation inputs.',
-  },
-  {
-    name: '33 KV POTENTIAL TRANSFORMER (Outdoor)',
-    fileName: '33 KV POTENTIAL TRANSFORMER.png',
-    image: '/PRODUCT IMAGES/33 KV POTENTIAL TRANSFORMER.png',
-    category: 'Potential Transformer',
-    description: 'Heavy-duty 33 KV potential transformer built to withstand extreme electrical and environmental conditions while delivering accurate metering and relaying voltage.',
-  },
-  {
-    name: '33KV CURRENT TRANSFORMER (Outdoor)',
-    fileName: '33KV CURRENT TRANSFORMER.png',
-    image: '/PRODUCT IMAGES/33KV CURRENT TRANSFORMER.png',
-    category: 'Current Transformer',
-    description: '33 KV outdoor current transformer designed for system protection and metering in substations and heavy industrial distribution networks.',
-  },
-  {
-    name: '33 KV potential transformer (indoor)',
-    fileName: 'Potential-transformer-guntype.png',
-    image: '/PRODUCT IMAGES/11 KV 22KV POTENTIAL TRANSFORMER.png',
-    category: 'Potential Transformer',
-    description: 'Potential transformer (Gun-type). Compact and reliable design for voltage measurement, featuring durable insulation and consistent performance in power distribution.',
-  },
-  {
-    name: 'BAR TYPE CURRENT TRANSFORMER',
-    fileName: 'BAR TYPE CURRENT TRANSFORMER.png',
-    image: '/PRODUCT IMAGES/BAR TYPE CURRENT TRANSFORMER.png',
-    category: 'Current Transformer',
-    description: 'Bar-type current transformer (busbar mounted) engineered for simple installation and high performance in power control panels and switchgear.',
-  },
-  {
-    name: 'METERING CUBICLE - VERTICLE',
-    fileName: 'METERING CUBICLE - VERTICLE.png',
-    image: '/PRODUCT IMAGES/METERING CUBICLE - VERTICLE.png',
-    category: 'Metering Cubicle',
-    description: 'Vertical layout metering cubicle. Compact footprint, robust metal enclosure, and integrated current/potential transformers for utility billing and energy monitoring.',
-  },
-  {
-    name: 'METERING CUBICLE -HORIZONTAL',
-    fileName: 'METERING CUBICLE -HORIZONTAL.png',
-    image: '/PRODUCT IMAGES/METERING CUBICLE -HORIZONTAL.png',
-    category: 'Metering Cubicle',
-    description: 'Horizontal layout metering cubicle. Designed for easy access, wiring maintenance, and clear monitoring of instrumentation in industrial environments.',
-  },
-  {
-    name: 'OIL COOLED CURRENT TRANSFORMER',
-    fileName: 'OIL COOLED CURRENT TRANSFORMER.jpg',
-    image: '/PRODUCT IMAGES/OIL COOLED CURRENT TRANSFORMER.jpg',
-    category: 'Current Transformer',
-    description: 'Outdoor oil-cooled current transformer. Features excellent dielectric properties, outdoor weatherproofing, and maximum heat dissipation for high-voltage protection.',
-  },
-  {
-    name: 'OIL COOLED POTENTIAL TRANSFORMER',
-    fileName: 'OIL COOLED POTENTIAL TRANSFORMER.jpg',
-    image: '/PRODUCT IMAGES/OIL COOLED POTENTIAL TRANSFORMER.jpg',
-    category: 'Potential Transformer',
-    description: 'Outdoor oil-cooled potential transformer. Combines oil insulation with robust construction to deliver continuous voltage monitoring in high-voltage grids.',
-  },
+  // --- Current Transformers (CT) ---
   {
     name: '11KV / 22KV CURRENT TRANSFORMER (Indoor)',
     fileName: '11 kv 22 kv current transformer (indoor).png',
@@ -112,14 +29,100 @@ export const products: Product[] = [
     description: '33 KV current transformer (Indoor). Combines oil insulation with robust construction to deliver continuous voltage monitoring in high-voltage grids.',
   },
   {
+    name: '11KV / 22KV CURRENT TRANSFORMER (Outdoor)',
+    fileName: '11KV/22KV CURRENT TRANSFORMER.png',
+    image: '/PRODUCT IMAGES/11KV 22KV CURRENT TRANSFORMER.png',
+    category: 'Current Transformer',
+    description: '11 KV to 22 KV medium voltage current transformer. Provides precise current measurement and protection, featuring high thermal and dynamic stability.',
+  },
+  {
+    name: '33KV CURRENT TRANSFORMER (Outdoor)',
+    fileName: '33KV CURRENT TRANSFORMER.png',
+    image: '/PRODUCT IMAGES/33KV CURRENT TRANSFORMER.png',
+    category: 'Current Transformer',
+    description: '33 KV outdoor current transformer designed for system protection and metering in substations and heavy industrial distribution networks.',
+  },
+  {
+    name: 'BAR TYPE CURRENT TRANSFORMER',
+    fileName: 'BAR TYPE CURRENT TRANSFORMER.png',
+    image: '/PRODUCT IMAGES/BAR TYPE CURRENT TRANSFORMER.png',
+    category: 'Current Transformer',
+    description: 'Bar-type current transformer (busbar mounted) engineered for simple installation and high performance in power control panels and switchgear.',
+  },
+  {
+    name: 'OIL COOLED CURRENT TRANSFORMER',
+    fileName: 'OIL COOLED CURRENT TRANSFORMER.jpg',
+    image: '/PRODUCT IMAGES/OIL COOLED CURRENT TRANSFORMER.jpg',
+    category: 'Current Transformer',
+    description: 'Outdoor oil-cooled current transformer. Features excellent dielectric properties, outdoor weatherproofing, and maximum heat dissipation for high-voltage protection.',
+  },
+
+  // --- Potential Transformers (PT) ---
+  {
+    name: '11KV / 22KV POTENTIAL TRANSFORMER (Indoor)',
+    fileName: '11 KV 22KV POTENTIAL TRANSFORMER.png',
+    image: '/PRODUCT IMAGES/11 KV 22KV POTENTIAL TRANSFORMER.png',
+    category: 'Potential Transformer',
+    description: 'Alternative design for 11 KV / 22 KV potential transformer, offering reliable voltage stepping and monitoring in power distribution networks.',
+  },
+  {
+    name: '33 KV POTENTIAL TRANSFORMER (Indoor)',
+    fileName: '33 KV POTENTIAL TRANSFORMER (indoor).png',
+    image: '/PRODUCT IMAGES/11 KV 22KV POTENTIAL TRANSFORMER.png',
+    category: 'Potential Transformer',
+    description: 'Potential transformer (Gun-type). Compact and reliable design for voltage measurement, featuring durable insulation and consistent performance in power distribution.',
+  },
+  {
+    name: '11KV / 22KV POTENTIAL TRANSFORMER (Outdoor)',
+    fileName: '11 KV 22 KV POTENTIAL TRANSFORMER.png',
+    image: '/PRODUCT IMAGES/11 KV 22 KV POTENTIAL TRANSFORMER.png',
+    category: 'Potential Transformer',
+    description: 'High-accuracy indoor/outdoor potential transformer designed for 11 KV and 22 KV electrical systems. Engineered for durability, high insulation resistance, and reliable voltage measurement.',
+  },
+  {
+    name: '33 KV POTENTIAL TRANSFORMER (Outdoor)',
+    fileName: '33 KV POTENTIAL TRANSFORMER.png',
+    image: '/PRODUCT IMAGES/33 KV POTENTIAL TRANSFORMER.png',
+    category: 'Potential Transformer',
+    description: 'Heavy-duty 33 KV potential transformer built to withstand extreme electrical and environmental conditions while delivering accurate metering and relaying voltage.',
+  },
+  {
     name: 'Potential transformer-GunType 11/22/33 KV',
     fileName: 'Potential-transformer-guntype.png',
     image: '/PRODUCT IMAGES/Potential-transformer-guntype.png',
     category: 'Potential Transformer',
     description: 'Potential transformer (Gun-type). Compact and reliable design for voltage measurement, featuring durable insulation and consistent performance in power distribution.',
   },
+  {
+    name: '3 PHASE POTENTIAL TRANSFORMER',
+    fileName: '3 PHASE POTENTIAL TRANSFORMER.png',
+    image: '/PRODUCT IMAGES/3 PHASE POTENTIAL TRANSFORMER.png',
+    category: 'Potential Transformer',
+    description: 'Three-phase voltage transformer designed for simultaneous monitoring of all three phases, ensuring system balance and reliable instrumentation inputs.',
+  },
+  {
+    name: 'OIL COOLED POTENTIAL TRANSFORMER',
+    fileName: 'OIL COOLED POTENTIAL TRANSFORMER.jpg',
+    image: '/PRODUCT IMAGES/OIL COOLED POTENTIAL TRANSFORMER.jpg',
+    category: 'Potential Transformer',
+    description: 'Outdoor oil-cooled potential transformer. Combines oil insulation with robust construction to deliver continuous voltage monitoring in high-voltage grids.',
+  },
 
-
+  // --- Metering Cubicles ---
+  {
+    name: 'METERING CUBICLE - VERTICLE',
+    fileName: 'METERING CUBICLE - VERTICLE.png',
+    image: '/PRODUCT IMAGES/METERING CUBICLE - VERTICLE.png',
+    category: 'Metering Cubicle',
+    description: 'Vertical layout metering cubicle. Compact footprint, robust metal enclosure, and integrated current/potential transformers for utility billing and energy monitoring.',
+  },
+  {
+    name: 'METERING CUBICLE -HORIZONTAL',
+    fileName: 'METERING CUBICLE -HORIZONTAL.png',
+    image: '/PRODUCT IMAGES/METERING CUBICLE -HORIZONTAL.png',
+    category: 'Metering Cubicle',
+    description: 'Horizontal layout metering cubicle. Designed for easy access, wiring maintenance, and clear monitoring of instrumentation in industrial environments.',
+  },
 ]
 
 const categories = ['All', 'Current Transformer', 'Potential Transformer', 'Metering Cubicle']
@@ -221,7 +224,7 @@ export function ProductsClient() {
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {filteredProducts.map((product) => (
             <div
-              key={product.fileName}
+              key={`${product.name}-${product.fileName}`}
               onClick={() => setSelectedProduct(product)}
               className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-md hover:border-brand-red/30 cursor-pointer"
             >
